@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body class="main-body">
+    <section class="main-section">
+      <!-- Start of badge -->
+      <mark class="badge-canvas">
+        <main class="badge-parent">
+          <img src="tsg-badge-rays.svg" alt="badge rays" class="badge-rays" />
+          <img src="tsg-badge-logo.svg" alt="badge logo" class="badge-logo" />
+        </main>
+      </mark>
+      <!-- End of badge -->
+    </section>
+    <script>
+        var rays = document.querySelector(".badge-rays");
+        window.addEventListener("scroll", function () {
+          var value = window.scrollY * 0.25;
+          rays.style.transform = `rotate(${value}deg)`;
+        });
+      </script>
+  </body>
+</html>

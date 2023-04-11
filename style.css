@@ -1,0 +1,41 @@
+:root {
+    --badge-ray-size: 200px;
+    --badge-logo-size: 56px;
+}
+.badge-canvas {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.badge-parent {
+    position: relative;
+    display: inline-block;
+}
+.badge-rays {
+    height: var(--badge-ray-size);
+    width: var(--badge-ray-size);
+}
+.badge-logo {
+    position: absolute;
+    height: var(--badge-logo-size);
+    width: var(--badge-logo-size);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 2px));
+}
+
+/* For scrolling test only, do not copy code bellow */
+.main-body {
+    height: 400vh;
+    padding: 20px;
+}
+.main-section {
+    background-color: #F5F1EB;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
